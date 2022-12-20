@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <p>Studio Ghibli</p>
-    <nav class="header-nav">
-      <ul>
-        <li>films</li>
-        <li>Studio Ghibli</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article class="carousel"></article>
-    <article class="films">
-      <h1></h1>
-    </article>
-  </main>
-  <footeer class="footer">
-    <p>Studio Ghibli</p>
-  </footeer>
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
-</body>
-
+  <body>
+    <header class="header">
+      <p>Studio Ghibli</p>
+      <nav class="header-nav">
+        <ul>
+          <li>films</li>
+          <li>Studio Ghibli</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="carousel"></article>
+      <article class="films">
+        <h1>FILMS</h1>
+        <section class="films-container">
+          <div class="films-box">
+            <img
+              src="./assets/films-princess-monoke.webp"
+              id="films-img"
+              class="films-img"
+            />
+            <a href="#"><h2 class="films-title">Princess Mononoke</h2></a>
+          </div>
+          <div class="films-box">
+            <img src="./assets/films-the-cat-returns.webp" class="films-img" />
+            <a href="#"><h2 class="films-title">The Cat Returns</h2></a>
+          </div>
+          <div class="films-box">
+            <img
+              src="./assets/films-grave-of-the-fireflies.webp"
+              class="films-img"
+            />
+            <a href="#"><h2 class="films-title">Grave of the Fireflies</h2></a>
+          </div>
+        </section>
+        <div class="btn-container">
+          <button type="button" class="films-btn">All films</button>
+        </div>
+        <!-- <div class="films-link">
+          <h2>all films</h2>
+        </div> -->
+      </article>
+    </main>
+    <footeer class="footer">
+      <div class="footer-title">
+        <p>Studio Ghibli</p>
+      </div>
+      <div class="social">
+        <a href="#"><img src="./assets/footer-facebook-icon.png" /></a>
+        <a href="#"><img src="./assets/footer-instagram-icon.png" /></a>
+        <a href="#"><img src="./assets/footer-twitter-icon.png" /></a>
+        <a href="#"><img src="./assets/footer-youtube-icon.png" /></a>
+      </div>
+      <div class="copyright">
+        <small>© 2022 <b>Studio Ghibli.</b> Made by Fran & Mari.</small>
+      </div>
+    </footeer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
