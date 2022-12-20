@@ -14,20 +14,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-
-  <body>
-    <header class="header">
-      <p>Studio Ghibli</p>
-      <nav class="header-nav">
-        <ul>
-          <li>films</li>
-          <li>Studio Ghibli</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article class="carousel"></article>
-      <article class="films">
+<body>
+  <header class="header">
+    <p>STUDIO GHIBLI</p>
+    <nav class="header-nav">
+      <ul>
+        <li>films</li>
+        <li>Studio Ghibli</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="carousel">
+      <div class="carousel-container">
+        <input type="radio" id="carousel-button-1" name="carousel-slide" hidden>
+        <input type="radio" id="carousel-button-2" name="carousel-slide" hidden>
+        <input type="radio" id="carousel-button-3" name="carousel-slide" hidden>
+        <div class="slides-carousel">
+          <section class="carousel-slide-item">
+            <img src="assets/carousel-totoro.webp" alt="my neighbor totoro">
+            <div class="carousel-slide-item_footer">
+              <p>My Neighbor Totoro</p>
+              <p>
+                Two sisters move to the country with their father in order to be closer to their hospitalized mother,
+                and
+                discover the surrounding trees are inhabited by Totoros ... <a href="#">More</a>
+              </p>
+            </div>
+          </section>
+          <section class="carousel-slide-item">
+            <img src="assets/carousel-castillo.webp" alt="Howl's Moving Castle">
+            <div class="carousel-slide-item_footer">
+              <p>
+                Howl's Moving Castle
+              </p>
+              <p>
+                When Sophie, a shy young woman, is cursed with an old body by a spiteful witch, her only chance of
+                breaking the spell ... <a href="#">More</a>
+              </p>
+            </div>
+          </section>
+          <section class="carousel-slide-item">
+            <img src="assets/carousel-shijiro.webp" alt="spirited away">
+            <div class="carousel-slide-item_footer">
+              <p>
+                Spirited Away
+              </p>
+              <p>
+                It is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her
+                parents along a path that
+                leads to a world ruled ... <a href="#">More</a>
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="carousel-pagination">
+          <label for="carousel-button-1" class="carousel-pagination-item">
+            <img src="assets/carousel-totoro.webp" alt="my neighbor totoro">
+          </label>
+          <label for="carousel-button-2" class="carousel-pagination-item">
+            <img src="assets/carousel-castillo.webp" alt="Howl's Moving Castle">
+          </label>
+          <label for="carousel-button-3" class="carousel-pagination-item">
+            <img src="assets/carousel-shijiro.webp" alt="spirited away">
+          </label>
+        </div>
+      </div>
+    </article>
+    <article class="films">
         <h1>FILMS</h1>
         <section class="films-container">
           <div class="films-box">
@@ -57,8 +111,8 @@
           <h2>all films</h2>
         </div> -->
       </article>
-    </main>
-    <footeer class="footer">
+  </main>
+<footeer class="footer">
       <div class="footer-title">
         <p>Studio Ghibli</p>
       </div>
@@ -72,7 +126,7 @@
         <small>© 2022 <b>Studio Ghibli.</b> Made by Fran & Mari.</small>
       </div>
     </footeer>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
 </html>
