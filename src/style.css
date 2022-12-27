@@ -257,8 +257,13 @@ input[id="carousel-button-3"]:checked
 /* ****************************************************************** */
 
 /* estilos para los films destacados */
-h1 {
-  size: 15px;
+
+.films-header-container {
+  margin-top: 50px;
+}
+
+.films-header {
+  font-size: 30px;
   text-align: center;
   color: #8a99aa;
   text-transform: uppercase;
@@ -270,9 +275,9 @@ h1 {
   grid-auto-rows: minmax(150px, auto);
   gap: 30px;
   padding: 20px;
-  justify-content: space-around;
-  /* margin: 0 auto; */
-  /* width: 80%; */
+  margin: auto;
+  width: 80%;
+  /* border-bottom: solid 1px #697484; */
 }
 
 .films-box {
@@ -292,14 +297,14 @@ h1 {
 
 .films-title {
   text-align: center;
+  font-size: 18px;
   position: absolute;
   bottom: 0;
   margin: 0;
   padding: 5px;
-  color: #fff;
+  color: #cdf;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
   width: 100%;
-  font-size: 15px;
 }
 
 .films-title:hover {
@@ -309,7 +314,9 @@ h1 {
 .btn-container {
   display: flex;
   justify-content: flex-end;
-  padding: 0 30px 20px;
+  padding: 10px 20px 30px;
+  margin: auto;
+  width: 80%;
 }
 .films-btn {
   border-radius: 1px;
@@ -336,6 +343,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .container-footer {
   display: flex;
   justify-content: space-between;
