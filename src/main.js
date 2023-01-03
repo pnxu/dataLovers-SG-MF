@@ -5,6 +5,15 @@ import { filtarFilms } from "./data.js";
 // import data from './data/rickandmorty/rickandmorty.js';
 import studioGhibli from "./data/ghibli/ghibli.js";
 // console.log(example, data);
+import {
+  renderFilters,
+  filterByDecade,
+  filterByDirector,
+  sortAlphabeticallyAscending,
+  sortAlphabeticallyDescending,
+  sortByRatingAscending,
+  sortByRatingDescending,
+} from "./filters.js";
 
 const arrayGhibli = studioGhibli.films;
 // header
@@ -66,3 +75,30 @@ card.forEach((elemento, i) => {
 // headerNavFilms.children[1].addEventListener("click", () => {
 //   filmsContainer.innerHTML = "";
 // });
+
+// logica filtros opciones
+renderFilters();
+
+// ordenar alfabeticamente
+// const sortAlphabetically = document.getElementById("name-filter");
+
+// Filtrar por decada
+const decadeAnchors = document.getElementsByName("decade-option");
+decadeAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", () => {
+    filterByDecade(anchor);
+  });
+});
+
+//ordenar por rating
+
+// Fitrar por director
+const directorAnchors = document.getElementsByName("director-option");
+directorAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", () => {
+    filterByDirector(anchor);
+  });
+});
+
+// Filtrar por texto
+const inputSearch = document.getElementById("search-input");

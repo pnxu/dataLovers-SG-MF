@@ -68,7 +68,7 @@ main {
   position: relative;
   font-size: 0.9rem;
   font-weight: bold;
-  border: 1px solid #697484;
+  border: 1px solid #8a99aa;
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
@@ -143,8 +143,132 @@ main {
 }
 /* ************************************************************* */
 /* background */
+.background-img {
+  margin-top: 4rem;
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
 
 /* browser */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em;
+  margin-top: 1em;
+}
+
+.navbar-container p {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  overflow: hidden;
+  margin: 1em;
+  border: 1px solid #293037;
+  border-radius: 5px;
+  background-color: #0d1a21;
+}
+
+.navbar-menu a {
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar-dropdown-btn {
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 13px;
+  outline: none;
+  padding: 0.5rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-right: 1px solid #293037;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.navbar-menu a:hover,
+.navbar-dropdown:hover .navbar-dropdown-btn {
+  color: white;
+  background-color: #697484;
+}
+
+/* drowpdown oculto */
+.navbar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #697484;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0.2em;
+}
+
+/* links dentro del dropdown */
+.navbar-dropdown-content a {
+  float: none;
+  color: #0d1a21;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+.navbar-dropdown-content a:hover {
+  background-color: rgba(169, 170, 174, 0.692);
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content {
+  display: block;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  /* margin-left: 2em; */
+  color: #999;
+}
+
+.search-box p {
+  text-align: center;
+}
+.search-input {
+  background-color: #2c3444;
+  border: none;
+  margin-left: 30px;
+  color: #999;
+  height: 2em;
+  border-radius: 3px;
+  margin: auto 1em;
+}
+
+.search-input:focus {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.menu-option {
+  cursor: pointer;
+}
 /* ************************************************************* */
 /* films grid */
 .films-grid > h4 {
@@ -352,6 +476,17 @@ main {
   }
   /* ***********************************************************************/
 
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  /* .navbar-menu {
+    flex-direction: column;
+  } */
+
+  .search-box {
+    flex-direction: column;
+  }
   /* footeer */
   .footer .social a {
     width: 1rem;
