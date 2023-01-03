@@ -1,5 +1,5 @@
 // import { example, filtarFilms } from "./data.js";
-import { filtarFilms } from "./data.js";
+import { filtarFilms, filtrarFilmsName } from "./data.js";
 // import data from './data/lol/lol.js';
 // import data from "./data/pokemon/pokemon.js";
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -57,23 +57,37 @@ const showFilms = (obj) => {
   filmsContainer.appendChild(sectionFilms);
 };
 
-arrayGhibli.forEach((elemento) => showFilms(elemento));
-
-// voltear tarjetas de films
-const backCard = document.querySelectorAll(".films-grid__back-card");
-const card = document.querySelectorAll(".films-grid__section-card");
-const frontCard = document.querySelectorAll(".films-grid__front-card");
-
-card.forEach((elemento, i) => {
-  backCard[i].addEventListener("click", () => {
-    elemento.style.transform = "rotateY(0)";
+const arraySelectedFilms = (arrayFilms, texto) => {
+  filmsContainer.textContent = "";
+  arrayFilms.forEach((elemento) => showFilms(elemento));
+  // elemento html para voltear tarjetas de films
+  const backCard = document.querySelectorAll(".films-grid__back-card");
+  const card = document.querySelectorAll(".films-grid__section-card");
+  const frontCard = document.querySelectorAll(".films-grid__front-card");
+  // elemento para mostrar la cantidad de peliculas
+  const totalResultsfilms = document.querySelector(
+    ".films-grid__results-films p"
+  );
+  // calculos para voltear tarjeta
+  card.forEach((elemento, i) => {
+    backCard[i].addEventListener("click", () => {
+      elemento.style.transform = "rotateY(0)";
+    });
+    frontCard[i].addEventListener("click", () => {
+      elemento.removeAttribute("style");
+    });
   });
-  frontCard[i].addEventListener("click", () => {
-    elemento.removeAttribute("style");
-  });
-});
-// headerNavFilms.children[1].addEventListener("click", () => {
-//   filmsContainer.innerHTML = "";
+  // calculos para mostar la cantidad de peliculas
+  totalResultsfilms.textContent = `There are ${arrayFilms.length} ${texto}`;
+};
+
+arraySelectedFilms(arrayGhibli, "total films");
+
+// etiquetaHTML.addEventListener("click", () => {
+//   arraySelectedFilms(
+//     filtrarFilmsName(arrayGhibli, "Hayao Miyazaki"),
+//     "films for Hayao Miyazaki"
+//   );
 // });
 
 // logica filtros opciones
