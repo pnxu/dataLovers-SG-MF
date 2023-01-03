@@ -14,3 +14,9 @@ export const filtarFilms = (filmsData, title) => {
     // console.log(films.title);
   );
 };
+
+export const filtrarFilmsName = (filmsData, name) => {
+  return filmsData.filter(
+    (films) => films.producer === name || films.director === name
+  );
+};
