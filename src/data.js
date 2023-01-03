@@ -1,22 +1,62 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return "example";
+//filtrar por decada
+export const filterByDecade = (filmsData, decade) => {
+  const parseToDecade = (year) => Math.floor(Number.parseInt(year) / 10) * 10;
+  const results = [];
+  filmsData.forEach((film) => {
+    const releaseDecade = parseToDecade(film.release_date);
+    if (parseToDecade(decade) === releaseDecade) results.push(film);
+  });
+  return results;
 };
 
-export const anotherExample = () => {
-  return "OMG";
+//filtrar por director
+export const filterByDirector = (filmsData, director) => {
+  const results = [];
+  filmsData.forEach((film) => {
+    const filmDirector = film.director;
+    if (director === filmDirector) results.push(film);
+  });
+  return results;
 };
 
-export const filtarFilms = (filmsData, title) => {
-  return filmsData.filter(
-    (films) => films.title === title
-    // console.log(films.title);
-  );
+//ordenar alfabeticamente
+export const sortAlphabetically = (filmsData, order) => {
+  if (order === "A-Z") {
+    filmsData.sort((obj1, obj2) => {
+      if (obj1.title > obj2.title) {
+        return 1;
+      }
+      if (obj1.title < obj2.title) {
+        return -1;
+      }
+      return 0;
+    });
+  }
+  if (order === "Z-A") {
+    filmsData.sort((obj1, obj2) => {
+      if (obj1.title < obj2.title) {
+        return 1;
+      }
+      if (obj1.title > obj2.title) {
+        return -1;
+      }
+      return 0;
+    });
+  }
+  return filmsData;
 };
 
-export const filtrarFilmsName = (filmsData, name) => {
-  return filmsData.filter(
-    (films) => films.producer === name || films.director === name
-  );
+//ordenar por rating
+export const sortByRating = (filmsData, rating) => {
+  if (rating === "Highest First") {
+    filmsData.sort((obj1, obj2) => {
+      return obj2.rt_score - obj1.rt_score;
+    });
+  }
+  if (rating === "Lowest First") {
+    filmsData.sort((obj1, obj2) => {
+      return obj1.rt_score - obj2.rt_score;
+    });
+  }
+  return filmsData;
 };
