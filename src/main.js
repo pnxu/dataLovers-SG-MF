@@ -1,19 +1,11 @@
-// import { example, filtarFilms } from "./data.js";
-import { filtarFilms, filtrarFilmsName } from "./data.js";
-// import data from './data/lol/lol.js';
-// import data from "./data/pokemon/pokemon.js";
-// import data from './data/rickandmorty/rickandmorty.js';
-import studioGhibli from "./data/ghibli/ghibli.js";
-// console.log(example, data);
 import {
-  renderFilters,
   filterByDecade,
   filterByDirector,
-  sortAlphabeticallyAscending,
-  sortAlphabeticallyDescending,
-  sortByRatingAscending,
-  sortByRatingDescending,
-} from "./filters.js";
+  sortAlphabetically,
+  sortByRating,
+} from "./data.js";
+import studioGhibli from "./data/ghibli/ghibli.js";
+import { renderFilters } from "./generateOptions.js";
 
 const arrayGhibli = studioGhibli.films;
 // header
@@ -83,34 +75,53 @@ const arraySelectedFilms = (arrayFilms, texto) => {
 
 arraySelectedFilms(arrayGhibli, "total films");
 
-// etiquetaHTML.addEventListener("click", () => {
-//   arraySelectedFilms(
-//     filtrarFilmsName(arrayGhibli, "Hayao Miyazaki"),
-//     "films for Hayao Miyazaki"
-//   );
-// });
-
 // logica filtros opciones
 renderFilters();
 
-// ordenar alfabeticamente
-// const sortAlphabetically = document.getElementById("name-filter");
-
-// Filtrar por decada
+// Mostar por decada
 const decadeAnchors = document.getElementsByName("decade-option");
 decadeAnchors.forEach((anchor) => {
   anchor.addEventListener("click", () => {
-    filterByDecade(anchor);
+    arraySelectedFilms(
+      filterByDecade(arrayGhibli, anchor.innerHTML),
+      `films released in the ${anchor.innerHTML}`
+    );
   });
 });
 
 //ordenar por rating
 
-// Fitrar por director
+// Mostrar por director
 const directorAnchors = document.getElementsByName("director-option");
 directorAnchors.forEach((anchor) => {
   anchor.addEventListener("click", () => {
-    filterByDirector(anchor);
+    arraySelectedFilms(
+      filterByDirector(arrayGhibli, anchor.innerHTML),
+      `films directed by ${anchor.innerHTML}`
+    );
+  });
+});
+
+// ordenar alfabeticamente
+
+const alphabeticAnchors = document.querySelectorAll("#names-filter a");
+alphabeticAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", () => {
+    arraySelectedFilms(
+      sortAlphabetically(arrayGhibli, anchor.innerHTML),
+      `films`
+    );
+  });
+});
+
+// ordenar por rating
+const scoreAnchors = document.querySelectorAll("#rating-filter a");
+scoreAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", () => {
+    arraySelectedFilms(
+      sortByRating(arrayGhibli, anchor.innerHTML),
+      `films, ordered by ${anchor.innerHTML} `
+    );
   });
 });
 
