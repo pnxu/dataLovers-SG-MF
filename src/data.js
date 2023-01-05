@@ -78,3 +78,8 @@ export const filterRandom = (filmsData) => {
   }
   return arrayFilmRandom;
 };
+
+//filtracion por titulo 
+export const filterTitle = (filmsData, film) => {
+  return filmsData.filter(elemento => elemento.title=== film) 
+}
