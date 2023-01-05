@@ -262,7 +262,8 @@ main {
 
 .search-input:focus {
   border: none;
-  background-color: white;
+  background-color: #aaa;
+  outline: none;
   color: black;
 }
 

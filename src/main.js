@@ -3,6 +3,8 @@ import {
   filterByDirector,
   sortAlphabetically,
   sortByRating,
+  filterNameFilms,
+  filterRandom,
 } from "./data.js";
 import studioGhibli from "./data/ghibli/ghibli.js";
 import { renderFilters } from "./generateOptions.js";
@@ -125,5 +127,30 @@ scoreAnchors.forEach((anchor) => {
   });
 });
 
-// Filtrar por texto
+// Filtrar por input y mostrar aleatoriamente films si no encuentra resultados
 const inputSearch = document.getElementById("search-input");
+const totalResultsfilms = document.querySelector(
+  ".films-grid__results-films p"
+);
+
+inputSearch.addEventListener("input", () => {
+  arraySelectedFilms(
+    filterNameFilms(arrayGhibli, inputSearch.value),
+    `films found`
+  );
+  if (filterNameFilms(arrayGhibli, inputSearch.value).length === 0) {
+    totalResultsfilms.style.color = "#d91414";
+    arraySelectedFilms(filterRandom(arrayGhibli), "");
+    totalResultsfilms.textContent =
+      "NO RESULTS WERE FOUND, you can see other films";
+  } else {
+    totalResultsfilms.removeAttribute("style");
+  }
+});
+
+// borrar input escrito por el usuario
+const navBarMenu = document.querySelector(".navbar-menu");
+navBarMenu.addEventListener("click", () => {
+  inputSearch.value = "";
+  totalResultsfilms.removeAttribute("style");
+});

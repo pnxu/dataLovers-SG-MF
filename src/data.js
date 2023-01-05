@@ -60,3 +60,21 @@ export const sortByRating = (filmsData, rating) => {
   }
   return filmsData;
 };
+
+// ordenar por busqueda
+export const filterNameFilms = (filmsData, nameFilms) => {
+  const arrayNameFilms = filmsData.filter((obj) => {
+    const expReg = new RegExp(`${nameFilms}`, "ig");
+    return expReg.test(obj.title);
+  });
+  return arrayNameFilms;
+};
+
+// filtrar aleatoriamente
+export const filterRandom = (filmsData) => {
+  const arrayFilmRandom = [];
+  for (let i = 0; i < 4; i++) {
+    arrayFilmRandom[i] = filmsData[Math.floor(Math.random() * 5 + i * 5)];
+  }
+  return arrayFilmRandom;
+};
