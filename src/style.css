@@ -311,7 +311,7 @@ input[id="carousel-button-3"]:checked
   padding: 5px;
   color: #cdf;
   /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)); */
-  background-color: #222;
+  background-color: #0d1a21;
 }
 
 .films-title:hover {

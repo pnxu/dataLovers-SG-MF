@@ -143,17 +143,40 @@ main {
 }
 /* ************************************************************* */
 /* background */
-.background-img {
-  margin-top: 4rem;
-  height: 50vh;
+
+
+/* contenedor imagenes */
+.background-container {
+  margin-top: 4.5rem;
+  position: relative;
   width: 100%;
-  object-fit: cover;
+  height: 50vh;
 }
+
+/* imagenes fade in and out */
+.background-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  opacity: 0;
+  transition: opacity 1s;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* imagen activa */
+.background-container img.active {
+  opacity: 1;
+}
+/* ************************************************ */
 
 /* browser */
 .navbar-container {
   display: flex;
   justify-content: center;
+  position: ;
   align-items: center;
   margin: 0 1em;
   margin-top: 1em;
@@ -243,7 +266,6 @@ main {
 .search-box {
   display: flex;
   justify-content: center;
-  /* margin-left: 2em; */
   color: #999;
 }
 
@@ -477,8 +499,16 @@ main {
     transform: translateY(-0.4rem) rotate(-45deg);
   }
   /* ***********************************************************************/
+/* background responsive */
 
+.background-container {
+ /* height: auto; */
+}
+
+
+/* BROWSER */
   .navbar-container {
+    /* display: block; */
     flex-direction: column;
   }
 
