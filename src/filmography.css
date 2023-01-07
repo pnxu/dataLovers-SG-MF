@@ -142,8 +142,125 @@ main {
   text-align: center;
 }
 /* ************************************************************* */
+/* animation */
+.animation {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animation-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0.5rem;
+}
+.animation-abstract {
+  width: 70%;
+}
+.animation-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #697484;
+  margin: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+
+.animation-title h1 {
+  color: #ddd;
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+  padding: 0.3rem;
+}
+.animation-title p {
+  background-color: #28354f;
+  color: #bbb;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  margin: 0;
+  text-align: center;
+}
+
+.animation-info {
+  margin: 0.5rem;
+  color: #8a99aa;
+  font-size: 0.9rem;
+}
+.animation-info p {
+  display: inline-block;
+}
+.animation-director p:first-child,
+.animation-productor p:first-child,
+.animation-description p:first-child {
+  font-weight: bold;
+  color: #4c5f82;
+  font-size: 0.8rem;
+}
+.animation-director p:last-child,
+.animation-productor p:last-child {
+  padding-left: 0.2rem;
+}
+.animation-description p:first-child {
+  margin-bottom: 0;
+  display: block;
+}
+
+.animation-image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+.animation-image img {
+  outline: 1px solid #697484;
+  outline-offset: 3px;
+  max-width: 200px;
+}
 
 /* ******************************************************************************* */
+/* buttons */
+.buttons {
+  margin-top: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #697484;
+}
+.buttons button {
+  width: 30%;
+  margin: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid #697484;
+  border-radius: 5px;
+  background-color: #28354f;
+  color: #999;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+.buttons button:hover {
+  background-color: #0d1a21;
+}
+
+/* ******************************************************************************* */
+
 /* mediaquerys */
 @media screen and (max-width: 600px) {
   /* *************************************************************************/
@@ -222,4 +339,14 @@ main {
     width: 1rem;
   }
   /* ***********************************************************************/
+}
+
+@media screen and (max-width: 650px) {
+  .animation-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .animation-abstract {
+    width: 90%;
+  }
 }
