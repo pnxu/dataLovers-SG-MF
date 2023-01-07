@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="films.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Films</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-container">
-        <div class="header-logo">
-          <p>STUDIO GHIBLI</p>
-        </div>
-        <input type="checkbox" id="header-menu" class="header-input" />
-        <label for="header-menu" class="header-label">
-          <span class="header-label__icon"></span>
-          <span class="header-label__icon"></span>
-          <span class="header-label__icon"></span>
-        </label>
-        <nav class="header-nav_films">
-          <a href="index.html" class="header-nav_item">HOME</a>
-          <a href="films.html" class="header-nav_item">FILMS</a>
-          <a href="#" class="header-nav_item">ABOUT</a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="films.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Films</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <p>STUDIO GHIBLI</p>
       </div>
-    </header>
+      <input type="checkbox" id="header-menu" class="header-input" />
+      <label for="header-menu" class="header-label">
+        <span class="header-label__icon"></span>
+        <span class="header-label__icon"></span>
+        <span class="header-label__icon"></span>
+      </label>
+      <nav class="header-nav_films">
+        <a href="index.html" class="header-nav_item">HOME</a>
+        <a href="films.html" class="header-nav_item">FILMS</a>
+        <a href="#" class="header-nav_item">ABOUT</a>
+      </nav>
+    </div>
+  </header>
     <main>
       <article class="background"></article>
       <div class="background-container">
@@ -82,20 +80,20 @@
               <div id="directors-filter" class="navbar-dropdown-content"></div>
             </div>
           </div>
-          <div class="search-box">
-            <p>FIND A FILM</p>
-            <input type="text" id="search-input" class="search-input" />
-          </div>
+        <div class="search-box">
+          <p>FIND A FILM</p>
+          <input type="text" id="search-input" class="search-input" />
         </div>
-      </section>
-      <article class="films-grid">
-        <h4>STUDIO GHIBLI FILMS</h4>
-        <div class="films-grid__results-films">
-          <p></p>
-        </div>
-        <div class="films-grid__films-container">
-          <!-- diseño de caja -->
-          <!-- <section class="films-grid__section">
+      </div>
+    </section>
+    <article class="films-grid">
+      <h4>STUDIO GHIBLI FILMS</h4>
+      <div class="films-grid__results-films">
+        <p></p>
+      </div>
+      <div class="films-grid__films-container">
+        <!-- diseño de caja -->
+        <!-- <section class="films-grid__section">
           <div class="films-grid__section-card">
             <div class="films-grid__front-card">
               <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg"
@@ -119,26 +117,28 @@
             <a href="#">Castle in the Sky</a>
           </div>
         </section> -->
-          <!-- fin de diseño de caja -->
-        </div>
-      </article>
-    </main>
-    <footeer class="footer">
-      <div class="container-footer">
-        <div class="footer-title">
-          <p>Studio Ghibli</p>
-        </div>
-        <div class="social">
-          <a href="#"><img src="./assets/footer-facebook-icon.png" /></a>
-          <a href="#"><img src="./assets/footer-instagram-icon.png" /></a>
-          <a href="#"><img src="./assets/footer-twitter-icon.png" /></a>
-          <a href="#"><img src="./assets/footer-youtube-icon.png" /></a>
-        </div>
+        <!-- fin de diseño de caja -->
       </div>
-      <div class="copyright">
-        <small>© 2022 <b>Studio Ghibli.</b> Made by Fran & Mari.</small>
+    </article>
+  </main>
+  <footeer class="footer">
+    <div class="container-footer">
+      <div class="footer-title">
+        <p>Studio Ghibli</p>
       </div>
-    </footeer>
-    <script src="main.js" type="module"></script>
-  </body>
+      <div class="social">
+        <a href="#"><img src="./assets/footer-facebook-icon.png" /></a>
+        <a href="#"><img src="./assets/footer-instagram-icon.png" /></a>
+        <a href="#"><img src="./assets/footer-twitter-icon.png" /></a>
+        <a href="#"><img src="./assets/footer-youtube-icon.png" /></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <small>© 2022 <b>Studio Ghibli.</b> Made by Fran & Mari.</small>
+    </div>
+  </footeer>
+  <script src="main.js" type="module"></script>
+  <script src="filmography.js" type="module"></script>
+</body>
+
 </html>

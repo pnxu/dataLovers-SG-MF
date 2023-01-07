@@ -46,7 +46,7 @@ const showFilms = (obj) => {
           </div>
           <div class="films-grid__section-title">
             <p>&#9660 FILMOGRAPHY &#9660</p>
-            <a href="#">${obj.title}</a>
+            <a href="filmography.html" >${obj.title}</a>
           </div>`;
   filmsContainer.appendChild(sectionFilms);
 };
