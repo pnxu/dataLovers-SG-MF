@@ -91,7 +91,6 @@ decadeAnchors.forEach((anchor) => {
   });
 });
 
-//ordenar por rating
 
 // Mostrar por director
 const directorAnchors = document.getElementsByName("director-option");
@@ -154,3 +153,21 @@ navBarMenu.addEventListener("click", () => {
   inputSearch.value = "";
   totalResultsfilms.removeAttribute("style");
 });
+
+// imagenes fade in & out
+const images = document.querySelectorAll('.background-container img');
+let currentImageIndex = 0;
+
+function updateBackground() {
+  images.forEach(img => {
+    img.classList.remove('active');
+  });
+  images[currentImageIndex].classList.add('active');
+}
+
+setInterval(() => {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  updateBackground();
+}, 4000);
+
+updateBackground();

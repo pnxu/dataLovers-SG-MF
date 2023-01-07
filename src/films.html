@@ -33,42 +33,53 @@
       </nav>
     </div>
   </header>
-  <main>
-    <article class="background"></article>
-    <section>
-      <div>
-        <img src="assets/studio-ghibli.webp" class="background-img" />
+    <main>
+      <article class="background"></article>
+      <div class="background-container">
+        <img src="./assets/background-kodamas.webp">
+        <img src="./assets/1.webp">
+        <img src="./assets/2.webp">
+        <img src="./assets/3.webp">
+        <img src="./assets/4.webp">
       </div>
-    </section>
-    <section id="browser">
-      <div class="navbar-container">
-        <div class="navbar-title">
-          <p class="nav-title">browse by</p>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-dropdown">
-            <button class="navbar-dropdown-btn">Film Name &#9662;</button>
-            <div id="names-filter" class="navbar-dropdown-content">
-              <a href="#">A-Z</a>
-              <a href="#">Z-A</a>
+    </article>
+      <section id="browser">
+        <div class="navbar-container">
+          <div class="navbar-title">
+            <p class="nav-title">browse by</p>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-dropdown">
+              <button class="navbar-dropdown-btn">Film Name <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></button>
+              <div id="names-filter" class="navbar-dropdown-content">
+                <a href="#">A-Z</a>
+                <a href="#">Z-A</a>
+              </div>
+            </div>
+            <div class="navbar-dropdown">
+              <button class="navbar-dropdown-btn">Year <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></button>
+              <div id="decades-filter" class="navbar-dropdown-content"></div>
+            </div>
+            <div class="navbar-dropdown">
+              <button class="navbar-dropdown-btn">Rating <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></button>
+              <div id="rating-filter" class="navbar-dropdown-content">
+                <a href="#">Highest First</a>
+                <a href="#">Lowest First</a>
+              </div>
+            </div>
+            <div class="navbar-dropdown">
+              <button class="navbar-dropdown-btn">Directors <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></button>
+              <div id="directors-filter" class="navbar-dropdown-content"></div>
             </div>
           </div>
-          <div class="navbar-dropdown">
-            <button class="navbar-dropdown-btn">Year &#9662;</button>
-            <div id="decades-filter" class="navbar-dropdown-content"></div>
-          </div>
-          <div class="navbar-dropdown">
-            <button class="navbar-dropdown-btn">Rating &#9662;</button>
-            <div id="rating-filter" class="navbar-dropdown-content">
-              <a href="#">Highest First</a>
-              <a href="#">Lowest First</a>
-            </div>
-          </div>
-          <div class="navbar-dropdown">
-            <button class="navbar-dropdown-btn">Directors &#9662;</button>
-            <div id="directors-filter" class="navbar-dropdown-content"></div>
-          </div>
-        </div>
         <div class="search-box">
           <p>FIND A FILM</p>
           <input type="text" id="search-input" class="search-input" />
