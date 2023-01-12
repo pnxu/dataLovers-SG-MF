@@ -1452,7 +1452,7 @@ export default {
             },
             {
               id: "a3d8e70f-46a0-4e5a-b850-db01620d6b92",
-              name: "Haru",
+              name: "Haru Yoshioka",
             },
           ],
         },
