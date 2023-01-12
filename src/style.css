@@ -42,6 +42,9 @@ main {
   height: 4.5rem;
   z-index: 90;
 }
+.header-logo img {
+  width: 15rem;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -95,6 +98,7 @@ main {
 
 /* *********************************************************************/
 /* estilos para el carrusel */
+
 .carousel {
   display: flex;
   align-items: center;
@@ -310,7 +314,6 @@ input[id="carousel-button-3"]:checked
   margin: 0;
   padding: 5px;
   color: #cdf;
-  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)); */
   background-color: #0d1a21;
 }
 
@@ -403,6 +406,12 @@ input[id="carousel-button-3"]:checked
 @media screen and (max-width: 600px) {
   /* *************************************************************************/
   /* header */
+
+  .header-logo img {
+    /* height: 4rem; */
+    width: 10rem;
+  }
+
   .header-container {
     flex-direction: row-reverse;
   }

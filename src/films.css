@@ -34,7 +34,7 @@ main {
 /* header */
 .header {
   background-color: #181f23;
-  color: #ddd;
+  color: rgb(122, 112, 112);
   position: fixed;
   width: 100%;
   top: 0;
@@ -42,6 +42,11 @@ main {
   height: 4.5rem;
   z-index: 90;
 }
+
+.header-logo img {
+  width: 15rem;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -144,39 +149,77 @@ main {
 /* ************************************************************* */
 /* background */
 
-
-/* contenedor imagenes */
 .background-container {
-  margin-top: 4.5rem;
   position: relative;
   width: 100%;
   height: 50vh;
+  margin: auto;
+  margin-top: 4.5rem;
+  max-width: 1400px;
+  max-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* imagenes fade in and out */
-.background-container img {
+.background-container h1 {
   position: absolute;
+  z-index: 20;
+  text-align: center;
+  bottom: 0;
+  font-size: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px;
+}
+.background-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+}
+
+.background-item.active {
+  opacity: 1;
+}
+/* imagenes fade in and out */
+.background-item img {
+  position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
   height: 50vh;
-  opacity: 0;
-  transition: opacity 1s;
+  /* opacity: 0;
+  transition: opacity 1s; */
   object-fit: cover;
   object-position: center center;
+  filter: brightness(0.7);
 }
 
-/* imagen activa */
-.background-container img.active {
+.background-item p {
+  position: absolute;
   opacity: 1;
+  z-index: 20;
+  top: 0;
+  right: 5px;
+  color: #999;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
 }
+
 /* ************************************************ */
 
 /* browser */
 .navbar-container {
   display: flex;
   justify-content: center;
-  position: ;
   align-items: center;
   margin: 0 1em;
   margin-top: 1em;
@@ -431,6 +474,10 @@ main {
 @media screen and (max-width: 600px) {
   /* *************************************************************************/
   /* header */
+  .header-logo img {
+    /* height: 4rem; */
+    width: 10rem;
+  }
   .header-container {
     flex-direction: row-reverse;
   }
@@ -499,14 +546,11 @@ main {
     transform: translateY(-0.4rem) rotate(-45deg);
   }
   /* ***********************************************************************/
-/* background responsive */
-
-.background-container {
- /* height: auto; */
-}
-
-
-/* BROWSER */
+  /* background responsive */
+  .background-container h1 {
+    font-size: 20px;
+  }
+  /* BROWSER */
   .navbar-container {
     /* display: block; */
     flex-direction: column;
