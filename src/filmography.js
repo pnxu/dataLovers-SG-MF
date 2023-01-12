@@ -228,7 +228,6 @@ const showPeople = (obj) => {
   });
 };
 
-
 // animation
 // usando los titulos dados por films.html
 document.addEventListener("click", (e) => {
@@ -239,15 +238,21 @@ document.addEventListener("click", (e) => {
 });
 if (location.pathname === "/src/filmography.html") {
   showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
-  
+
+  // **************************************************************
+  // LOCATIONS
+
   buttonLocations.children[1].addEventListener("click", () => {
     const filmographyContainer = document.querySelector(
       ".filmography-container"
     );
     filmographyContainer.innerHTML = "";
     showLocation(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
+  });
+
+  // **************************************************
+  // CHARACTERS
   showPeople(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
-  
   btnCharacters.addEventListener("click", () => {
     showPeople(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
   });
