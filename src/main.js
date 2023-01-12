@@ -91,7 +91,6 @@ decadeAnchors.forEach((anchor) => {
   });
 });
 
-
 // Mostrar por director
 const directorAnchors = document.getElementsByName("director-option");
 directorAnchors.forEach((anchor) => {
@@ -154,15 +153,15 @@ navBarMenu.addEventListener("click", () => {
   totalResultsfilms.removeAttribute("style");
 });
 
-// imagenes fade in & out
-const images = document.querySelectorAll('.background-container img');
+// background fade in & out
+const images = document.querySelectorAll(".background-item");
 let currentImageIndex = 0;
 
 function updateBackground() {
-  images.forEach(img => {
-    img.classList.remove('active');
+  images.forEach((img) => {
+    img.classList.remove("active");
   });
-  images[currentImageIndex].classList.add('active');
+  images[currentImageIndex].classList.add("active");
 }
 
 setInterval(() => {

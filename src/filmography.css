@@ -42,6 +42,9 @@ main {
   height: 4.5rem;
   z-index: 90;
 }
+.header-logo img {
+  width: 15rem;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -260,11 +263,71 @@ main {
 }
 
 /* ******************************************************************************* */
+/* FILMOGRAPHY CHARACTERS */
+.character-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0.8rem 0.7rem;
+  flex-direction: column;
+  /* padding: 0.5rem; */
+  margin-top: 10px;
+  /* width: 800px; */
+  height: 350px;
+  margin: 0;
+  margin-left: 9em;
+}
+
+.character-img-container {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  /* right: 90px; */
+}
+
+.character-img-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+
+.character-description-container {
+  position: relative; /* or absolute */
+  z-index: 1;
+  width: 300px;
+  height: 250px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: #0d1a21;
+}
+
+.character-description-container h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #999;
+}
+
+.character-description-container p {
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5;
+  color: #ccc;
+}
 
 /* mediaquerys */
 @media screen and (max-width: 600px) {
   /* *************************************************************************/
   /* header */
+  .header-logo img {
+    /* height: 4rem; */
+    width: 10rem;
+  }
+
   .header-container {
     flex-direction: row-reverse;
   }
