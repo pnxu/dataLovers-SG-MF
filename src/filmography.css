@@ -427,9 +427,13 @@ main {
 }
 /* ******************************************************************************* */
 /* FILMOGRAPHY CHARACTERS */
-.character-card-container {
+.characters-container-section {
   display: flex;
   justify-content: space-around;
+}
+.character-card-container {
+  /* display: flex; */
+  /* justify-content: space-between; */
   margin: 0 0.8rem 0.7rem;
   flex-direction: column;
   /* padding: 0.5rem; */
