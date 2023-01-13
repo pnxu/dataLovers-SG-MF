@@ -437,7 +437,7 @@ export default {
         {
           id: "62346d33-caa0-4c17-8016-0aca56f3066b",
           name: "Karikiya",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/e/e3/Majo002.jpg",
+          img: "https://static.planetminecraft.com/files/resource_media/screenshot/1718/front-orig-1493745131.jpg",
           climate: "Mild",
           terrain: "City",
           surface_water: "30",
@@ -972,7 +972,7 @@ export default {
         {
           id: "42f787d8-1fcb-4d3d-82f2-a74409869368",
           name: "Seiji's House",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/a/a7/Mimi011.jpg",
+          img: "http://1.bp.blogspot.com/-7Gp1L59g7w8/TwHmraTuHsI/AAAAAAAAAaA/E_8-eXv_KB0/s1600/%25E5%259C%25B0%25E7%2590%2583%25E5%25B1%258B.jpg",
           climate: "Continental",
           terrain: "City",
           surface_water: "0",
@@ -1433,7 +1433,7 @@ export default {
         {
           id: "a8bd9c03-7c80-4a97-b7c0-6a668acaf576",
           name: "The Cat Kingdom",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Baron022.jpg",
+          img: "https://w0.peakpx.com/wallpaper/949/343/HD-wallpaper-cat-returns-%E7%8C%AB%E7%9A%84%E6%8A%A5%E6%81%A9-duke-cat-kingdom-haru-ghibli-anime-cat-returns-hayao-miyazaki.jpg",
           climate: "Continental",
           terrain: "Plain",
           surface_water: "30",
@@ -1696,7 +1696,7 @@ export default {
         {
           id: "bcc54f38-8847-45b0-97b1-307c94b2b517",
           name: "Enland",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/0/0e/Ged007.jpg",
+          img: "https://images.bauerhosting.com/legacy/empire-tmdb/films/37933/images/7GauLmcFx3tzic3B7DxvRM9Y7cN.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill",
           climate: "Wet",
           terrain: "Earthsea",
           surface_water: "100",
@@ -1950,7 +1950,7 @@ export default {
         {
           id: "1e7ed524-4b4f-466b-978c-69dda9777396",
           name: "Sho's house",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/8/86/Karigurashi002.jpg",
+          img: "http://asianwiki.com/images/f/f7/The_Secret_World_of_Arrietty.jpg",
           climate: "Warm",
           terrain: "Forest",
           surface_water: "10",
@@ -1959,7 +1959,7 @@ export default {
         {
           id: "f2148ab5-f272-4057-b05a-1321e35227b4",
           name: "Karigurashi's house",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/c/cd/Karigurashi019.jpg",
+          img: "https://screenmuse.files.wordpress.com/2012/11/the-secret-world-of-arrietty-2012.jpg?w=584",
           climate: "Warm",
           terrain: "Under the floorboards",
           surface_water: "10",
@@ -2171,7 +2171,7 @@ export default {
         {
           id: "2b380662-626d-42fb-9e3a-14f951201c8b",
           name: "Nagoya",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/2/20/Kazetachinu009.jpg",
+          img: "https://i0.wp.com/biffbampop.com/wp-content/uploads/2017/01/the-wind-rises-earthquake.png?resize=423%2C238&ssl=1",
           climate: "Damp",
           terrain: "Hill",
           surface_water: "20",
@@ -2291,7 +2291,7 @@ export default {
         {
           id: "682df5c3-b09e-46af-94d1-ae0d17f9b4b6",
           name: "Bamboo Forest",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/e/ec/Ghibli-kaguya-bamboo-forest.jpg",
+          img: "https://media.timeout.com/images/102189327/750/422/image.jpg",
           climate: "Tropical",
           terrain: "Forest",
           surface_water: "10",
