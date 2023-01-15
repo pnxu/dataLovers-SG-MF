@@ -53,7 +53,7 @@ const showAbstract = (obj) => {
 // *************************************************************************
 // locaciones
 // array con los climas y su imagen respectiva
-const buttonLocations = document.querySelector(".buttons-container");
+const buttonsLocationVehicles = document.querySelector(".buttons-container");
 const optionClimate = [
   {
     climate: "Dry",
@@ -219,7 +219,7 @@ const showLocation = (obj) => {
   filmographyContainer.insertAdjacentElement("afterbegin", locationContainer);
   if (obj.locations.length === 0) {
     locationContainer.innerHTML = `
-    <div class="noLocations">
+    <div class="noLocationsVehicles">
           <img src="assets/ghiblipediaNoResults.webp" alt="GhibliPedia">
           <p>NO RESULTS</p>
         </div>`;
@@ -230,6 +230,7 @@ const showLocation = (obj) => {
 };
 
 // *******************************************************************************************
+
 // *******************************************************************
 
 // mostrando los personajes de cada film
@@ -239,7 +240,7 @@ const animationTitle = document.querySelector(".animation-title h1");
 
 const showPeople = (obj) => {
   const people = obj.people;
-  console.log(people);
+  // console.log(people);
   charactersContainer.innerHTML = "";
   const sectionCharacters = document.createElement("section");
   sectionCharacters.classList.add("characters-container-section");
@@ -262,7 +263,64 @@ const showPeople = (obj) => {
     sectionCharacters.appendChild(characterCardContainer);
   });
 };
+// ****************************************************************
+// vehiculos
+/*<div class="vehicles-container">
+  <section class="vehicle">
+    <div class="vehicle-name">
+      <img src="" alt="">
+        <p>Nombre</p>
+        <p>VEHICLE CLASS</p>
+        <p>avion</p>  
+    </div>
+    <div class="vehicle-description">
+      <p>DESCRIPTION</p>
+      <P>descriptions</P>
+      <p>PILOT</p>
+      <img src="" alt="">
+    </div>
+  </section>
+</div>;
+*/
+const showVehicles = (obj) => {
+  const filmographyContainer = document.querySelector(".filmography-container");
+  const vehiclesContainer = document.createElement("div");
+  vehiclesContainer.classList.add("vehicles-container");
+  filmographyContainer.innerHTML = "";
+  filmographyContainer.appendChild(vehiclesContainer);
 
+  if (obj.vehicles.length === 0) {
+    vehiclesContainer.innerHTML = `
+    <div class="noLocationsVehicles">
+          <img src="assets/noResultsVehicles.png" alt="GhibliPedia">
+          <p>NO RESULTS</p>
+        </div>`;
+  }
+  obj.vehicles.forEach((elemento) => {
+    const sectionVehicles = document.createElement("section");
+    sectionVehicles.classList.add("vehicle");
+    const objCharacterMatching = obj.people.filter(
+      (el) => el.name === elemento.pilot.name
+    );
+    sectionVehicles.innerHTML = `
+    <div class="vehicle-name">
+      <img src=${elemento.img} alt="">
+        <p>${elemento.name}</p>
+        <p>VEHICLE CLASS</p>
+        <p>${elemento.vehicle_class}</p>
+    </div>
+    <div class="vehicle-description">
+      <p>DESCRIPTION</p>
+      <P>${elemento.description}</P>
+      <p>PILOT</p>
+      <img src=${objCharacterMatching[0].img} alt=${elemento.pilot.name}>
+      <p>${elemento.pilot.name}</p>
+    </div>
+    `;
+    vehiclesContainer.appendChild(sectionVehicles);
+  });
+};
+// ***************************************************************************
 // animation
 // usando los titulos dados por films.html
 document.addEventListener("click", (e) => {
@@ -277,7 +335,7 @@ if (location.pathname === "/src/filmography.html") {
   // **************************************************************
   // LOCATIONS
 
-  buttonLocations.children[1].addEventListener("click", () => {
+  buttonsLocationVehicles.children[1].addEventListener("click", () => {
     const filmographyContainer = document.querySelector(
       ".filmography-container"
     );
@@ -290,6 +348,11 @@ if (location.pathname === "/src/filmography.html") {
   showPeople(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
   btnCharacters.addEventListener("click", () => {
     showPeople(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
+  });
+  // ******************************************************
+  // VEHICLES
+  buttonsLocationVehicles.children[2].addEventListener("click", () => {
+    showVehicles(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
   });
 }
 // ***************************************************************

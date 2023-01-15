@@ -90,7 +90,7 @@ decadeAnchors.forEach((anchor) => {
     );
   });
 });
-
+// console.log(filterByDecade(studioGhibli.films, 1990));
 // Mostrar por director
 const directorAnchors = document.getElementsByName("director-option");
 directorAnchors.forEach((anchor) => {

@@ -764,7 +764,7 @@ export default {
         {
           id: "d8f893b5-1dd9-41a1-9918-0099c1aa2de8",
           name: "Red Wing",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/8/8f/Porco%27s_Plane.jpg",
+          img: "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas-para-ninos-cine-infantil/las-mejores-frases-del-cine-de-ghibli/porco-rosso/114599443-1-esl-ES/Porco-rosso.jpg?resize=480:*",
           description:
             "An experimental aircraft captured by Porco. Named Savoia S.21",
           vehicle_class: "Airplane",
@@ -1842,7 +1842,7 @@ export default {
         {
           id: "923d70c9-8f15-4972-ad53-0128b261d628",
           name: "Sosuke's Boat",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/PonyoS%C5%8DsukeBoat.jpg",
+          img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/1f7f81e7-5ac5-4ef9-a4d2-7138f2d225c9/dcackzl-e4a07523-d6c1-44ba-9ecc-009b398df3c0.jpg/v1/fill/w_868,h_468,q_75,strp/akito_and_estelle_s_adventures_of_ponyo__ch__7_by_perkygoth14_dcackzl-fullview.jpg",
           description: "A toy boat where Sosuke plays",
           vehicle_class: "Boat",
           length: "10",
@@ -2182,7 +2182,7 @@ export default {
         {
           id: "411f66ed0-771c-46d3-8f68-a3b65c6dd91c",
           name: "Mitsubishi 1MF9 ",
-          img: "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Kazetachinu044.jpg",
+          img: "https://i.pinimg.com/originals/e2/6b/46/e26b466a736036b37053d969c0661523.jpg",
           description:
             "The Mitsubishi 1MF9 or Mitsubishi Experimental Taka-type Carrier Fighter was a prototype Japanese fighter aircraft of the 1920s. It was a single-engined, single-seat biplane intended to operate from the Imperial Japanese Navy's aircraft carriers, but only two were built, with the type being rejected by the Navy.",
           vehicle_class: "War plane",
