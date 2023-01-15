@@ -234,30 +234,32 @@ const showLocation = (obj) => {
 
 // mostrando los personajes de cada film
 const charactersContainer = document.getElementById("filmography-container");
-const btnCharacters = document.getElementById("characters-button");
+const btnCharacters = document.getElementById("btn-characters");
 const animationTitle = document.querySelector(".animation-title h1");
 
 const showPeople = (obj) => {
   const people = obj.people;
   console.log(people);
   charactersContainer.innerHTML = "";
+  const sectionCharacters = document.createElement("section");
+  sectionCharacters.classList.add("characters-container-section");
+  charactersContainer.appendChild(sectionCharacters);
   people.forEach((character) => {
-    const sectionCharacters = document.createElement("section");
-    sectionCharacters.classList.add("characters-container-section");
-    sectionCharacters.innerHTML = ` <div class="character-card-container">
+    const characterCardContainer = document.createElement("div");
+    characterCardContainer.classList.add("character-card-container");
+    characterCardContainer.innerHTML = `
               <div class="character-img-container">
                 <img src=${character.img} alt=${character.name}>
                 </div>
                 <div class="character-description-container">
                 <h3>${character.name}</h3>
-                <p>Gender: ${character.gender}</p>
-                <p>Age: ${character.age}</p>
-                <p>Eye color: ${character.eye_color}</p>
-                <p>Hair color: ${character.hair_color}</p>
-                <p>Specie: ${character.specie}</p>
-                </div>
-              </div>`;
-    charactersContainer.appendChild(sectionCharacters);
+                <span><span class="card-descript">Gender</span><br> ${character.gender}</span>
+                <span><span class="card-descript">Age</span><br> ${character.age}</span>
+                <span><span class="card-descript">Eye color</span><br> ${character.eye_color}</span>
+                <span><span class="card-descript">Hair color</span><br> ${character.hair_color}</span>
+                <span><span class="card-descript">Specie</span><br> ${character.specie}</span>
+                </div>`;
+    sectionCharacters.appendChild(characterCardContainer);
   });
 };
 
