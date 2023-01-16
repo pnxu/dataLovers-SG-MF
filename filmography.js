@@ -329,7 +329,9 @@ document.addEventListener("click", (e) => {
     localStorage.setItem("titleFilm", e.target.innerHTML);
   }
 });
-if (location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html") {
+if (
+  location.pathname === "//pnxu.github.io/dataLovers-SG-MF/filmography.html"
+) {
   showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
 
   // **************************************************************
