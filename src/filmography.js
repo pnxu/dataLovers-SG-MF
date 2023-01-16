@@ -236,7 +236,7 @@ const showLocation = (obj) => {
 // mostrando los personajes de cada film
 const charactersContainer = document.getElementById("filmography-container");
 const btnCharacters = document.getElementById("btn-characters");
-const animationTitle = document.querySelector(".animation-title h1");
+// const animationTitle = document.querySelector(".animation-title h1");
 
 const showPeople = (obj) => {
   const people = obj.people;
