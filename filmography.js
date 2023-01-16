@@ -361,42 +361,54 @@ const carouselItemFooter = document.querySelectorAll(
   ".carousel-slide-item_footer a"
 );
 const filmsBox = document.querySelectorAll(".films-box a");
-if (location.pathname === "/src/index.html") {
+if (location.pathname === "/pnxu.github.io/dataLovers-SG-MF/index.html") {
   // carousel
   carouselItemFooter[0].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "My Neighbor Totoro");
-    if (location.pathname === "/src/filmography.html") {
+    if (
+      location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html"
+    ) {
       showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
     }
   });
   carouselItemFooter[1].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "Howl's Moving Castle");
-    if (location.pathname === "/src/filmography.html") {
+    if (
+      location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html"
+    ) {
       showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
     }
   });
   carouselItemFooter[2].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "Spirited Away");
-    if (location.pathname === "/src/filmography.html") {
+    if (
+      location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html"
+    ) {
       showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
     }
   });
   // films
   filmsBox[0].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "Princess Mononoke");
-    if (location.pathname === "/src/filmography.html") {
+    if (
+      location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html"
+    ) {
       showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
     }
   });
   filmsBox[1].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "The Cat Returns");
-    if (location.pathname === "/src/filmography.html") {
+    if (
+      location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html"
+    ) {
       showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
     }
   });
   filmsBox[2].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "Grave of the Fireflies");
-    if (location.pathname === "/src/filmography.html") {
+    if (
+      location.pathname === "/pnxu.github.io/dataLovers-SG-MF/filmography.html"
+    ) {
       showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
     }
   });
