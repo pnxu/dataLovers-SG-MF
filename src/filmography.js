@@ -364,7 +364,7 @@ const carouselItemFooter = document.querySelectorAll(
   ".carousel-slide-item_footer a"
 );
 const filmsBox = document.querySelectorAll(".films-box a");
-if (location.href === "https://pnxu.github.io/dataLovers-SG-MF/index.html") {
+if (location.href === "https://pnxu.github.io/dataLovers-SG-MF/") {
   // carousel
   carouselItemFooter[0].addEventListener("click", () => {
     localStorage.setItem("titleFilm", "My Neighbor Totoro");
