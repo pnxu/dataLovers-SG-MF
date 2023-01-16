@@ -330,7 +330,8 @@ document.addEventListener("click", (e) => {
   }
 });
 if (
-  location.pathname === "//pnxu.github.io/dataLovers-SG-MF/filmography.html"
+  // location.pathname === "//pnxu.github.io/dataLovers-SG-MF/filmography.html"
+  location.href === "https://pnxu.github.io/dataLovers-SG-MF/filmography.html"
 ) {
   showAbstract(filterTitle(arrayGhibli, localStorage.getItem("titleFilm")));
 
