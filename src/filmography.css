@@ -702,6 +702,10 @@ main {
     width: 1rem;
   }
   /* ***********************************************************************/
+  /* characters */
+  .character-card-container {
+    margin-bottom: 0.6em;
+  }
 }
 
 @media screen and (max-width: 650px) {

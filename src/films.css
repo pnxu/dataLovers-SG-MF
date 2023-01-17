@@ -559,20 +559,10 @@ main {
     font-size: 15px;
   }
   /* BROWSER */
-  .navbar-title {
-    /* margin-bottom: 0.1em; */
-  }
-  .navbar-title p {
-  }
   .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: block; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
     max-width: 500px;
     flex-direction: column;
   }
@@ -586,6 +576,7 @@ main {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 0;
   }
   .navbar-dropdown-btn {
     width: 20em;
