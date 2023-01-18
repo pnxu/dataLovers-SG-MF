@@ -49,20 +49,20 @@ PARA que pueda darme una noción de la película animada que veré.
 
 ### Criterios de aceptación
 
-El usuario puede acceder a los links de los films destacados.
-El usuario puede acceder a un botón que le muestre todos los films.
-El usuario puede ver de manera interactiva ver pasar los films destacados sin necesidad de apretar algo.
-El usuario puede acceder al botón de about.
+- [x] El usuario puede acceder a los links de los films destacados.
+- [x] El usuario puede acceder a un botón que le muestre todos los films.
+- [x] El usuario puede ver de manera interactiva ver pasar los films destacados sin necesidad de apretar algo.
+- [x] El usuario puede acceder al botón de about.
 
 ### Definición de terminado (DoD)
 
-El código está en el repositorio.
-El código cumple con el prototipo acordado.
-El código ha sido hecho en pair-programming.
-La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
-El código cumple con redirigir a los films destacados.
-El código fue implementado con animaciones.
-El código tiene una barra de navegación desplegable.
+- [x] El código está en el repositorio.
+- [x] El código cumple con el prototipo acordado.
+- [x] El código ha sido hecho en pair-programming.
+- [x] La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
+- [x] El código cumple con redirigir a los films destacados.
+- [x] El código fue implementado con animaciones.
+- [x] El código tiene una barra de navegación desplegable.
 
 ### Cuestionario de usuarios
 
@@ -124,27 +124,27 @@ PARA una vista panorámica de todas las animaciones y poder buscarlas según mis
 
 ### Criterios de aceptación
 
-El usuario puede ver todas las animaciones solo clickeando un botón.
-El usuario puede acceder a unos botones para filtrar los films.
-El usuario puede ver el poster y el año de estreno de los films en la tarjeta.
-El usuario puede ver la descripción de los films al voltear la tarjeta.
-El usuario puede voltear la tarjeta en el estado responsivo cuantas veces quiera.
+- [x] El usuario puede ver todas las animaciones solo clickeando un botón.
+- [x] El usuario puede acceder a unos botones para filtrar los films.
+- [x] El usuario puede ver el poster y el año de estreno de los films en la tarjeta.
+- [x] El usuario puede ver la descripción de los films al voltear la tarjeta.
+- [x] El usuario puede voltear la tarjeta en el estado responsivo cuantas veces quiera.
 
 ### Definición de terminado (DoD)
 
-El código está en el repositorio.
-El código cumple con el prototipo acordado.
-El código ha sido hecho al 60% en pair-programming.
-La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
-El cdigo cumple con mostrar los films de la data.
-El código filtra data y muestra los films según orden alfabetico.
-El código filtra data y muestra los films según su decada de estreno.
-El código filtra data y muestra los films según su rating.
-El código filtra data y muestra los films según su director.
-El código filtra data y muestra los films según el texto del input.
-El código fue implementado con animaciones.
-El codigo tiene una barra de navegación desplegable para los browser.
-El código tiene pruebas unitarias.
+- [x] El código está en el repositorio.
+- [x] El código cumple con el prototipo acordado.
+- [x] El código ha sido hecho al 60% en pair-programming.
+      La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
+- [x] El código cumple con mostrar los films de la data.
+- [x] El código filtra data y muestra los films según orden alfabetico.
+- [x] El código filtra data y muestra los films según su decada de estreno.
+- [x] El código filtra data y muestra los films según su rating.
+- [x] El código filtra data y muestra los films según su director.
+- [x] El código filtra data y muestra los films según el texto del input.
+- [x] El código fue implementado con animaciones.
+- [x] El codigo tiene una barra de navegación desplegable para los browser.
+- [x] El código tiene pruebas unitarias.
 
 ### Cuestionario de Usuarios
 
@@ -222,23 +222,23 @@ PARA ver si me animo a verla y saber quien la dirigió y poder decidir si veo un
 
 ### Criterios de aceptacion
 
-El usuario puede ver la filmografía en detalle despues de hacer click en el film escogido.
-El usuario puede ver el titulo del film.
-El usuario puede ver el director y productor del film.
-El usuario puede ver el poster y el año de estreno del film.
-El usuario puede ver la descripción del film.
+- [x] El usuario puede ver la filmografía en detalle despues de hacer click en el film escogido.
+- [x] El usuario puede ver el titulo del film.
+- [x] El usuario puede ver el director y productor del film.
+- [x] El usuario puede ver el poster y el año de estreno del film.
+- [x] El usuario puede ver la descripción del film.
 
 ### Definición de terminado (DoD)
 
-El código está en el repositorio.
-El código cumple con el prototipo acordado.
-El código ha sido hecho al 90% en pair-programming.
-La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
-El código cumple con mostrar el titulo del film.
-El código cumple con mostrar el director y productor.
-El código cumple con mostrar el poster y año de estreno.
-El código fue implementado con animaciones.
-El código tiene pruebas unitarias.
+- [x] El código está en el repositorio.
+- [x] El código cumple con el prototipo acordado.
+- [x] El código ha sido hecho al 90% en pair-programming.
+- [x] La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
+- [x] El código cumple con mostrar el titulo del film.
+- [x] El código cumple con mostrar el director y productor.
+- [x] El código cumple con mostrar el poster y año de estreno.
+- [x] El código fue implementado con animaciones.
+- [x] El código tiene pruebas unitarias.
 
 ### Cuestionario de usuarios
 
@@ -291,20 +291,20 @@ PARA recordar como eran los personajes y curiosidad.
 
 ### Criterios de aceptación
 
-El usuario puede ver los personajes en detalle después de hacer click en el botón characters.
-El usuario puede ver la imagen de cada personaje.
-El usuario puede ver sus caracteristicas.
+- [x] El usuario puede ver los personajes en detalle después de hacer click en el botón characters.
+- [x] El usuario puede ver la imagen de cada personaje.
+- [x] El usuario puede ver sus caracteristicas.
 
 ### Definición de terminado (DoD)
 
-El código está en el repositorio.
-El código cumple con el prototipo acordado.
-El código ha sido hecho al 95% en pair-programming.
-La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
-El código cumple con mostrar la foto de cada personaje.
-El código cumple con mostrar el nombre de cada personaje.
-El código cumple con mostrar las caracteristicas de cada personaje.
-El código tiene pruebas unitarias.
+- [x] El código está en el repositorio.
+- [x] El código cumple con el prototipo acordado.
+- [x] El código ha sido hecho al 95% en pair-programming.
+- [x] La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
+- [x] El código cumple con mostrar la foto de cada personaje.
+- [x] El código cumple con mostrar el nombre de cada personaje.
+- [x] El código cumple con mostrar las caracteristicas de cada personaje.
+- [x] El código tiene pruebas unitarias.
 
 ### Cuestionario de de usuarios
 
@@ -356,19 +356,19 @@ PARA poder internarme en ese mundo y saber detalles curiosos de los vehiculos qu
 
 ### Criterios de aceptación
 
-El usuario puede ver las locaciones y vehiculos en detalle después de hacer click en el botón locations y en el botón vehicles.
-El usuario puede ver la imagen de cada locación y vehiculo.
+- [x] El usuario puede ver las locaciones y vehiculos en detalle después de hacer click en el botón locations y en el botón vehicles.
+- [x] El usuario puede ver la imagen de cada locación y vehiculo.
 
 ### Definición de terminado (DoD)
 
-El código está en el repositorio.
-El código cumple con el prototipo acordado.
-El código ha sido hecho al 97% en pair-programming.
-La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
-El código cumple con mostrar la foto de cada locación y vehículo.
-El código cumple con mostrar la descripción de vehiculo.
-El código tiene pruebas unitarias.
-Encuentra facilmente la información de contacto.
+- [x] El código está en el repositorio.
+- [x] El código cumple con el prototipo acordado.
+- [x] El código ha sido hecho al 97% en pair-programming.
+- [x] La historia implementada ha sido testeada por 3 usuarios y se han incorporado las mejoras que se identificaron en el testeo de usabilidad.
+- [x] El código cumple con mostrar la foto de cada locación y vehículo.
+- [x] El código cumple con mostrar la descripción de vehiculo.
+- [x] El código tiene pruebas unitarias.
+- [x] Encuentra facilmente la información de contacto.
 
 ### Cuestionario de usuarios
 
