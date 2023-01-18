@@ -21,44 +21,26 @@ export const filterByDirector = (filmsData, director) => {
 
 //ordenar alfabeticamente
 export const sortAlphabetically = (filmsData, order) => {
+  const orderedData = filmsData.sort((obj1, obj2) => {
+    return obj1.title.localeCompare(obj2.title);
+  });
   if (order === "A-Z") {
-    filmsData.sort((obj1, obj2) => {
-      if (obj1.title > obj2.title) {
-        return 1;
-      }
-      if (obj1.title < obj2.title) {
-        return -1;
-      }
-      return 0;
-    });
+    return orderedData;
+  } else {
+    return orderedData.reverse();
   }
-  if (order === "Z-A") {
-    filmsData.sort((obj1, obj2) => {
-      if (obj1.title < obj2.title) {
-        return 1;
-      }
-      if (obj1.title > obj2.title) {
-        return -1;
-      }
-      return 0;
-    });
-  }
-  return filmsData;
 };
 
 //ordenar por rating
 export const sortByRating = (filmsData, rating) => {
+  const orderedRating = filmsData.sort((obj1, obj2) => {
+    return obj2.rt_score - obj1.rt_score;
+  });
   if (rating === "Highest First") {
-    filmsData.sort((obj1, obj2) => {
-      return obj2.rt_score - obj1.rt_score;
-    });
+    return orderedRating;
+  } else {
+    return orderedRating.reverse();
   }
-  if (rating === "Lowest First") {
-    filmsData.sort((obj1, obj2) => {
-      return obj1.rt_score - obj2.rt_score;
-    });
-  }
-  return filmsData;
 };
 
 // ordenar por busqueda

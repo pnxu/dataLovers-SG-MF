@@ -330,22 +330,24 @@ input[id="carousel-button-3"]:checked
   margin-right: 5em;
 }
 .films-btn {
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 0.9em;
   text-align: center;
-  border-radius: 5px;
-  color: #999;
-  background-color: #28354f;
   text-transform: uppercase;
-  border: 1px solid #697484;
-  border-radius: 5px;
-  padding: 5px 15px;
   text-decoration: none;
-  width: 20%;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgb(220, 212, 212);
+  background-color: #28354f;
+  border: 2px solid #697484;
+  border-radius: 5px;
+  padding: 0.4em;
+  width: 235px;
+  height: 2em;
+  /* box-shadow: inset 2px 2px 5px #323234, inset -2px -2px 5px #5f6163; */
 }
 .films-btn:hover {
-  transform: scale(1.1);
   background-color: #0d1a21;
+  transform: scale(1.1);
 }
 
 /* footer */
@@ -491,12 +493,18 @@ input[id="carousel-button-3"]:checked
   }
   /* ***********************************************************************/
   /* films destacados */
+
   .films-box {
     margin-bottom: 1em;
   }
+  .btn-container {
+    margin-bottom: 0.8m;
+  }
   .films-btn {
     width: 15em;
-    font-size: 0.6rem;
+    height: 2em;
+    font-size: 1em;
+    margin-right: 0;
   }
 }
 
